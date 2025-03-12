@@ -1,0 +1,45 @@
+<div class="text-xl font-bold flex flex-col flex-wrap content-around ">
+
+@for(item of colectionComponent; let i = $index;track $index){
+    <div class="relative inline-block group">
+        <colectionComponent [poster]="item.poster" > </colectionComponent>
+            <div class="h-80 mt-20 absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-80 transition-opacity duration-300">
+            <button  [ngClass]="{'hidden': !buttonvisible}" class="  fa fa-exclamation-circle text-center  cursor-pointer hover:text-gray-200  text-yellow-500"  (click)="showInformation(i)" > information</button>
+            </div>
+    </div>        
+   
+   
+
+
+
+    <h1 class=" font-bold mt-5 cursor-pointer  text-center text-2xl font-serif text-yellow-500">{{item.title}}</h1>
+    <br>
+    @if (openIndex === i) {
+    <div class="mb-20 z-0 -mt-100"   [ngClass]="{'hidden': !isvisible}">
+        <p-card  [style]="{ width: '53rem', overflow: 'hidden', }">
+            <ng-template #header>
+                <img alt="Card" class="w-full" [src]="item.image" />
+               
+                
+            </ng-template>
+           <i class="text-yellow-500 fa fa-play-circle-o" aria-hidden="true"> {{item.runtime}} </i>
+           <h2 class="text-4xl text-right -mt-10"><i class="text-xl text-yellow-700 fa fa-imdb" aria-hidden="true"></i>  <span class="font-bold text-yellow-500  text-2xl">   {{item.ratingNow}}</span> <span class=" text-xl text-gray-400">{{item.ratingTotal}}</span></h2>
+            <h1><span class="text-yellow-500">Stars :</span>  {{item.Stars}} </h1>
+            <p class="text-gray-400">{{item.plot}}</p>
+            <ng-template #footer>
+                <div class="flex gap-4 mt-1">
+                    <p-button label="Cancel" severity="secondary" class="w-full" [outlined]="false" styleClass="w-full" (click)="isvisible = false" />
+                    <p-button label="Save" class="w-full" styleClass="w-full" />
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+}
+
+    
+    
+   
+}
+     
+    
+</div>
