@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     this.AppService.getcolectionComponent().subscribe({
       next: ((_res) => {
         this.colectionComponent = _res as category[]
-     
+        
      
       })
     })

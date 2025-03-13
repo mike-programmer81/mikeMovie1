@@ -9,10 +9,13 @@
 
 <nav class="fixed bottom-0 left-0 right-0 bg-black shadow-lg  m-auto">
     <div class="flex justify-around p-4 h-15  ">
-      <button pButton icon="pi pi-home" size="large" [rounded]="true" [text]="true" (click)="onclickHome()" ></button>
+      <button  pButton icon="pi pi-home" size="large" [rounded]="true" [text]="true" (click)="onclickHome()" ></button>
+      <button pButton icon="pi pi-list"size="large" [rounded]="true" [text]="true" (click)="onClickLogIn()" ></button>
+      <button pButton icon="pi pi-sign-in"size="large" [rounded]="true" [text]="true"  ></button>
       <button pButton icon="pi pi-envelope"size="large" [rounded]="true" [text]="true" (click)="onClickTodo()" ></button>
-      <button  class="fa fa-user-circle" aria-hidden="true"></button>
-      <button pButton  icon="pi pi-sign-in" size="large" [rounded]="true" [text]="true" (click)="onClickLogIn() "  ></button>
     </div>
   </nav>
-  <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+
+  
+

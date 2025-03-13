@@ -1,5 +1,5 @@
 export interface category {
-  id?: number,
+  id: number,
   title: string
   genre?: actorarry[],
   ratingTotal?: string,
@@ -11,6 +11,8 @@ export interface category {
   image: string,
   runtime?: string,
   boxOffice?: string,
+  rating:number,
+  Genre:string,
 }
 export interface actorarry {
   name: string

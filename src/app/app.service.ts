@@ -22,10 +22,8 @@ export class AppService {
                     "image": "https://wallpapercg.com/download/fast-x-3840x2160-11583.jpg",
                     "runtime": "2h 21m",
                     "boxOffice": "$28.3 million",
-                    
-                    
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "rating": 4,   
+                    "Genre": "Action , Car Action  , mystery",
                 },
                 {
                     id : 2,
@@ -38,10 +36,12 @@ export class AppService {
                     "image": "https://wallpapercat.com/w/full/6/0/c/5822914-2880x1620-desktop-hd-deadpool-wolverine-comics-background-image.jpg",
                     "runtime": "2h 08m",
                     "boxOffice": "$28.3 million",
+                    "rating": 2,
+
                     
                     
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "Genre": "Action , Dark Comedy , Adventure",
+                    
                 },
                 {
                     id : 3,
@@ -54,10 +54,11 @@ export class AppService {
                     "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/05/atlas-atlas-shepherd-jennifer-lopez.jpg",
                     "runtime": "1h 58m",
                     "boxOffice": "$28.3 million",
+                    "rating": 3,
                     
                     
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "Genre": "Action,Action Epic,Artificial Intelligence",
+                    
                 },
 
 
@@ -73,10 +74,11 @@ export class AppService {
                     "image": "https://www.techadvisor.com/wp-content/uploads/2025/02/when-is-sonic-3-available-to-stream-2.jpg?quality=50&strip=all",
                     "runtime": "1h 50m",
                     "boxOffice": "$28.3 million",
+                    "rating": 4,
                     
                     
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "Genre": "Animal Adventure, Superhero , Family"
+                    
                 },
                 {
                     id : 5,
@@ -89,9 +91,10 @@ export class AppService {
                     "image": "https://spcdn.shortpixel.ai/spio/ret_img,q_orig,to_webp,s_webp/thecosmiccircus.com/wp-content/uploads/2023/05/Untitled-design-41.jpg",
                     "runtime": "1h 50m",
                     "boxOffice": "$28.3 million",
+                    "rating": 3,
                     
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "Genre": "Action , Road Trip  , Alien Invasion",
+                    
                 },
                 {
                     id : 6,
@@ -104,10 +107,11 @@ export class AppService {
                     "image": "https://streamcoimg-a.akamaihd.net/000/390/615/390615-Banner-L2-5910462c50979976730b358bb59c3ec1.jpg",
                     "runtime": "2h 55m",
                     "boxOffice": "$28.3 million",
+                    "rating": 5,
                     
                     
-                    genre: [],
-                    actors: [{name:"Tim Robbins",genre: 'action'}]
+                    "Genre": "Gangster , Tragedy  , Drama",
+                    
                 },
             
         ])
